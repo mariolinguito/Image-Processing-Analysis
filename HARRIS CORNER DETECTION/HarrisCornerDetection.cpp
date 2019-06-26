@@ -222,7 +222,7 @@ Mat HarrisCornerDetector(Mat& src, Mat& Ix, Mat& Iy, int upper) {
     Mat dest = src.clone();
 	
     // Ci occorre per convertire l'immagine di destinazione a colori. 
-	cvtColor(dest, dest, COLOR_GRAY2BGR);
+    cvtColor(dest, dest, COLOR_GRAY2BGR);
 
     // Andiamo a sfoltire i punti che si trovano in un intorno ben preciso, 
     // quello cioè definito dalla grandezza della finestra (wSize) utilizzata 
