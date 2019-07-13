@@ -179,14 +179,8 @@ void ComputeMasks(Mat histogram, Mat src, int valley, int index) {
             } else {
                 leftMask.at<uchar>(i, j) = 0; 
             }
-        }
-    }
 
-    // With the same logical reasoning we can create the right mask. 
-    for(int i = 0; i < channels[index].rows; i++) {
-        for(int j = 0; j < channels[index].cols; j++) {
-            int intensity = channels[index].at<uchar>(i, j); 
-            
+            // With the same logical reasoning we can create the right mask. 
             if(right.at<float>(intensity, 0) > 0) {
                 rightMask.at<uchar>(i, j) = 1; 
             } else {
