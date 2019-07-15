@@ -3,3 +3,4 @@ A collect of most important algorithms for image processing and analysis. All th
 
 ## Commented with English language: 
 1. Ohlander algorithm; 
+2. Distance-Transformation algorithm.
